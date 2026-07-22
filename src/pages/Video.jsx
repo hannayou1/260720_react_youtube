@@ -1,7 +1,12 @@
 import React from "react";
+import Main from "../components/section/Main";
 
 const Video = () => {
-  return <div>Video</div>;
+  return (
+    <Main>
+      video
+    </Main>
+  );
 };
 
 export default Video;
