@@ -23,10 +23,13 @@
     .title{
         font-size: 2rem;
         margin-bottom: 1rem;
+          @include line-one;
     }
     .desc{
         margin-bottom: 1rem;
         color: var(--white200);
+        @include line(4);
+      
     }
 
     .info{
@@ -42,5 +45,49 @@
             font-size: 0.8rem;
             color: var(--white200);
         }
+    }
+}
+
+@media (max-width : 1700px) {
+   .today__inner{
+        .today__thumb{
+            width: 500px;
+        }
+        .today__text{
+            width: calc(100% - 500px);
+        
+            .desc {
+                @include line(2);
+            }
+        }
+   }
+   
+}
+
+@media (max-width : 1200px) {
+     .today__inner{
+        flex-direction: column;
+        .today__thumb{
+            width: 100%;
+        }
+        .today__text{
+            width: 100%;
+        
+            .title{
+                font-size: 20px;
+            }
+            .desc {
+                display: none;
+            }
+        }
+   }
+}
+
+@media (max-width : 800px) {
+
+
+    #todayPage,
+    #today{
+        margin-top: 80px;
     }
 }
