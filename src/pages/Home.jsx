@@ -6,6 +6,7 @@ import Webd from "../components/contents/Webd";
 import Gsap from "../components/contents/Gsap";
 import Portfolio from "../components/contents/Portfolio";
 import Youtube from "../components/contents/Youtube";
+import Website from "../components/contents/Website";
 
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
       <Today/>
       <Developer/>
       <Webd/>
+      <Website/>
       <Gsap/>
       <Portfolio/>
       <Youtube/>
