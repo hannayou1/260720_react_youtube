@@ -29,7 +29,7 @@ const VideoSlider02 = ({ id, title, videos }) => {
             spaceBetween={20}
             slidesPerView={1}
             navigation
-           pagination={{ clickable: true }}
+            pagination={{ clickable: true }}
             scrollbar={{ draggable: true }}
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log('slide change')

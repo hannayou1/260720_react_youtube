@@ -13,13 +13,15 @@ import { websiteText } from "../data/website";
 import { gsapText } from "../data/gsap";
 import { portfolioText } from "../data/portfolio";
 import { youtubeText } from "../data/youtube";
+import {developerText} from "../data/developer"
+import { todayText } from "../data/today"
 
 
 const Home = () => {
   return (
     <Main title="Hanna 유튜브" description="한나 유튜브에 오신 것을 환영합니다♥">
-      <Today/>
-      <Developer/>
+      <Today videos={todayText} id="today"/>
+      <Developer videos={developerText} title="추천 개발자를 소개합니다.^^" id="developer"/>
       <VideoSlider02 videos={webdText} title="웹디자인 준비는 이걸로" id="webd" />
       <VideoSlider02 videos={websiteText} title="웹사이트" id="website" />
       <VideoSlider02 videos={gsapText} title="gsap" id="gsap" />
