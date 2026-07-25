@@ -3,7 +3,7 @@ import Main from '../components/section/Main'
 
 import { todayText } from "../data/today"
 import { Link } from "react-router-dom"
-import { use } from 'react'
+
 
 const Today = () => {
     const [loading, setLoading] = useState(true);
