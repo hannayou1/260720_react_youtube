@@ -28,3 +28,11 @@ YouTube Data API를 활용하여 외부 데이터를 가져오는 방법을 익�
 - sass를 설치합니다. `npm install sass`
 - react-helmet-async를 설치합니다. `npm install react-helmet-async`
 - swiper를 설치합니다. `npm install swiper`
+
+rapid api
+https://rapidapi.com/
+
+로그인
+
+유튜브 키 있는 사이트
+https://console.cloud.google.com/apis/credentials?project=skilled-drake-410805
