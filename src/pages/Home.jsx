@@ -1,12 +1,6 @@
 import React from "react";
 import Main from "../components/section/Main";
-import Developer from "../components/contents/Developer";
-import Today from "../components/contents/Today";
-import Webd from "../components/contents/Webd";
-import Gsap from "../components/contents/Gsap";
-import Portfolio from "../components/contents/Portfolio";
-import Youtube from "../components/contents/Youtube";
-import Website from "../components/contents/Website";
+
 import VideoSlider02 from "../components/video/VideoSlider02";
 import { webdText } from "../data/webd";
 import { websiteText } from "../data/website";
