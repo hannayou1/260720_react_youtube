@@ -1,5 +1,7 @@
 import React from "react";
 import Main from "../components/section/Main";
+import Developer from "../components/contents/Developer";
+import Today from "../components/contents/Today";
 
 import VideoSlider02 from "../components/video/VideoSlider02";
 import { webdText } from "../data/webd";
