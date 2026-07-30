@@ -5,6 +5,8 @@
         border-bottom:0 ;
     } 
 
+
+
     a{
         display:flex;
         padding: 10px;
@@ -29,6 +31,7 @@
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
+         
         }
     }
 }
@@ -51,8 +54,8 @@
                 transition: all 0.3s;
 
                 &:hover{
-                    background-color: var(--glass-bg-strong);
-                    color: var(--white);
+                    background-color: var(--hover-bg);
+                    color: var(--point);
                 }
 
                 svg{
@@ -88,9 +91,9 @@
 
 
                 &:hover{
-                    background-color: var(--glass-bg-strong);
+                    background-color: var(--hover-bg);
                     border-color: var(--point);
-                    color: var(--white);
+                    color: var(--point);
                 }
 
             }
@@ -106,15 +109,10 @@
 }
 
 .header__sns{
-    position: fixed;
-    width: 260px;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    margin-top: auto;      // flex 컬럼에서 항상 하단에 배치 (넘치면 자연 스크롤)
+    width: 100%;
     text-align: center;
     padding: 15px 0 10px;
-    background-color: var(--blackAlpha100);
-    backdrop-filter: blur(10px);
 
     @media (max-width:800px) {
         display: none;

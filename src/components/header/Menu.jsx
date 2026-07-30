@@ -12,6 +12,7 @@ const Menu = () => {
             {headerMenus.map((menu, key)=> (
                 <li key={key} className={location.pathname === menu.src ? "active" : ""}>
                     <Link to={menu.src}>
+                        {menu.icon}
                         {menu.title}
                     </Link>
                 </li>

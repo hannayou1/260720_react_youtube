@@ -1,3 +1,10 @@
+#search {
+    position: sticky;
+    top: 0;
+    z-index: 900;
+    background-color: var(--black);
+}
+
 .search__inner{
     position: relative;
     width: 100%;
@@ -22,9 +29,7 @@
     input{
         flex: 1;
         min-width: 0;
-        background-color: var(--glass-bg);
-        backdrop-filter: blur(var(--glass-blur));
-        -webkit-backdrop-filter: blur(var(--glass-blur));
+        background-color: var(--black100);
         border: 1px solid var(--glass-border);
         padding: 14px 45px;
         border-radius: 40px;
@@ -38,7 +43,7 @@
 
         &:focus {
             outline: none;
-            background-color: var(--glass-bg-strong);
+            background-color: var(--black200);
             border-color: var(--point);
             box-shadow: var(--glow);
         }

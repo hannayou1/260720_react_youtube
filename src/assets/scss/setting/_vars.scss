@@ -35,10 +35,12 @@
 
     // 글래스모피즘 디자인 토큰 (라이트 테마 · 유리 강하게)
     --gradient: linear-gradient(135deg, #38bdf8 0%, #2563eb 100%);
-    --glass-bg: rgba(255, 255, 255, 0.45);
+    --glass-bg: rgba(255, 255, 255, 1);
     --glass-bg-strong: rgba(255, 255, 255, 0.7);
     --glass-border: rgba(15, 23, 42, 0.08);
     --glass-blur: 22px;
+    // 메뉴 호버 배경 (라이트: 하늘색 틴트)
+    --hover-bg: rgba(56, 189, 248, 0.16);
     // 글로우: 하늘색, 은은하게
     --glow: 0 6px 22px rgba(56, 189, 248, 0.20);
     --glow-strong: 0 0 0 1px rgba(56, 189, 248, 0.30), 0 8px 28px rgba(56, 189, 248, 0.28);
@@ -88,6 +90,8 @@
     --glass-bg: rgba(255, 255, 255, 0.05);
     --glass-bg-strong: rgba(255, 255, 255, 0.09);
     --glass-border: rgba(255, 255, 255, 0.10);
+    // 메뉴 호버 배경 (다크: 반투명 화이트)
+    --hover-bg: rgba(255, 255, 255, 0.09);
 
     // 글로우 / 그림자 (다크용)
     --glow: 0 6px 22px rgba(56, 189, 248, 0.24);
