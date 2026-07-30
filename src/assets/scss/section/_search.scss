@@ -97,4 +97,9 @@
             padding: 14px 14px 14px 45px;
         }
     }
+
+    // 고정된 검색바(80px)에 가려지지 않도록 검색 결과 페이지 상단 여백
+    #searchPage {
+        margin-top: 80px;
+    }
 }
