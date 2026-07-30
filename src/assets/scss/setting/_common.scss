@@ -1,6 +1,11 @@
 body {
     background-color: var(--black);
+    background-image:
+        radial-gradient(55vw 55vw at 85% -15%, rgba(56, 189, 248, 0.14), transparent 60%),
+        radial-gradient(45vw 45vw at -5% 105%, rgba(14, 165, 233, 0.10), transparent 55%);
+    background-attachment: fixed;
     color: var(--white);
+    transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 //섹션 공통 요소
@@ -11,8 +16,10 @@ section{
     }
 
     h2{
-        font-size: 1.25rem;
-        margin-bottom: 1rem;
+        font-size: 1.375rem;
+        font-weight: 700;
+        letter-spacing: -0.2px;
+        margin-bottom: 1.25rem;
 
         em{
             position: relative;
@@ -70,19 +77,23 @@ section{
         &::after {
             content: "";
             position: absolute;
-            width: 80px;
-            height: 80px;
-            background: var(--blackAlpha400) url(../../img/icon/play.svg) no-repeat center;
+            width: 72px;
+            height: 72px;
+            background-image: url(../../img/icon/play.svg), var(--gradient);
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: var(--glow-strong);
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%) scale(0.8);
             border-radius: 50%;
             opacity: 0;
-            transition: opacity 0.3s;
+            transition: opacity 0.3s, transform 0.3s;
         }
 
         &:hover::after{
             opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
         }
     }
 }

@@ -2,12 +2,13 @@
     --mainfont-nanum: "nanumSquareNeo";
     --mainfont-nexon: "nexonLv1";
   
-    --black: #000;
-    --black100: #161616;
-    --black200: #222;
-    --black300: #333;
-    --black400: #444;
-    --black500: #000;
+    // 배경 스케일 (라이트 테마 — 눈이 편한 소프트 그레이)
+    --black: #e7eaf0;   // 전체 배경 (명도 낮춘 뉴트럴 그레이, 눈부심 완화)
+    --black100: #dbe0e9; // 보더 / 옅은 면
+    --black200: #ccd3df;
+    --black300: #bac2d1;
+    --black400: #737b8c; // 흐린 텍스트로 쓰일 때 대비 확보
+    --black500: #e7eaf0;
 
     --blackAlpha: #00000000;
     --blackAlpha100: #00000025;
@@ -16,16 +17,36 @@
     --blackAlpha400: #000000c3;
     --blackAlpha500: #000000eb;
     
-    --white: #fff;
-    --white100: #efefef;
-    --white200: #d9d9d9;
-    --white300: #fff;
-    --white400: #fff;
-    --white500: #fff;
+    // 텍스트 스케일 (라이트 테마 — 어두운 글씨)
+    --white: #1a1d24;    // 본문 기본 텍스트 (진한 잉크)
+    --white100: #2b303a; // 메뉴 등 살짝 옅은 텍스트
+    --white200: #5c6474; // 흐린 보조 텍스트
+    --white300: #1a1d24;
+    --white400: #1a1d24;
+    --white500: #1a1d24;
 
-    --red: #f00;
-    --red100: rgba(255, 0, 0, 0.441);
-    
+    // 포인트 색상 (하늘색)
+    --point: #38bdf8;
+    --point100: rgba(56, 189, 248, 0.35);
+
+    // 하위 호환용 별칭 (기존 var(--red) 참조 유지)
+    --red: var(--point);
+    --red100: var(--point100);
+
+    // 글래스모피즘 디자인 토큰 (라이트 테마 · 유리 강하게)
+    --gradient: linear-gradient(135deg, #38bdf8 0%, #2563eb 100%);
+    --glass-bg: rgba(255, 255, 255, 0.45);
+    --glass-bg-strong: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(15, 23, 42, 0.08);
+    --glass-blur: 22px;
+    // 글로우: 하늘색, 은은하게
+    --glow: 0 6px 22px rgba(56, 189, 248, 0.20);
+    --glow-strong: 0 0 0 1px rgba(56, 189, 248, 0.30), 0 8px 28px rgba(56, 189, 248, 0.28);
+    --radius: 14px;
+    --radius-lg: 20px;
+    // 그림자: 라이트 테마용 부드러운 층 그림자
+    --shadow-soft: 0 2px 8px rgba(15, 23, 42, 0.06), 0 12px 34px rgba(15, 23, 42, 0.12);
+
     // 폰트 셋팅
     font-family: var(--mainfont-nanum), var(--mainfont-nexon);
     font-size: 16px;
@@ -43,4 +64,33 @@
         font-size: 14px;
         line-height: 1.4;
     }
+}
+
+// ── 다크 테마 (data-theme="dark" 일 때 색상만 오버라이드) ──
+:root[data-theme="dark"] {
+    // 배경 스케일 (딥 네이비 차콜)
+    --black: #0f1420;
+    --black100: #1a2130;
+    --black200: #232c3d;
+    --black300: #2e3a4f;
+    --black400: #7c8598;
+    --black500: #0f1420;
+
+    // 텍스트 스케일 (밝은 글씨)
+    --white: #eef2f8;
+    --white100: #dbe1ea;
+    --white200: #9aa4b5;
+    --white300: #eef2f8;
+    --white400: #eef2f8;
+    --white500: #eef2f8;
+
+    // 유리 (어두운 배경용 반투명 화이트)
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-bg-strong: rgba(255, 255, 255, 0.09);
+    --glass-border: rgba(255, 255, 255, 0.10);
+
+    // 글로우 / 그림자 (다크용)
+    --glow: 0 6px 22px rgba(56, 189, 248, 0.24);
+    --glow-strong: 0 0 0 1px rgba(56, 189, 248, 0.38), 0 8px 28px rgba(56, 189, 248, 0.36);
+    --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.3), 0 12px 34px rgba(0, 0, 0, 0.45);
 }

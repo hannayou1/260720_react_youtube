@@ -1,6 +1,12 @@
 .today__inner{
     display: flex;
-    background-color: var(--black100);
+    background-color: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-soft);
+    overflow: hidden;
     margin-bottom: 3.125rem;
 }
 
@@ -12,10 +18,14 @@
     width: 60%;
     padding: 2rem;
     .today{
-        background-color: #f00;
-        padding: 2px 50px;
+        background: var(--gradient);
+        box-shadow: var(--glow);
+        color: #fff;
+        padding: 4px 50px;
         border-radius: 20px;
         text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 0.5px;
         margin-bottom: 10px;
         display: inline-block;
     }

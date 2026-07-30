@@ -2,28 +2,33 @@
     position: fixed;
     left: 0;
     top: 0;
-    width:260px;
+    width:261px;
     height: 100%;
     overflow-y: auto;
     z-index: 10000;
-    border-right: 1px solid var(--black100);
+    background-color: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border-right: 1px solid var(--glass-border);
 }
 
 #main {
     max-width: 2000px;
     min-height: 100vh;
     margin: 0 auto;
-    padding-left:260px;
+    padding-left:261px;
 }
 
 #footer {
     text-align: center;
-    background-color: var(--black100);
-    border-top: 1px solid var(--black100);
+    background-color: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border-top: 1px solid var(--glass-border);
     padding:20px;
-    margin-left: 260px;
-    width: calc(100% - 260px);
-    color: var(--black400);
+    margin-left: 261px;
+    width: calc(100% - 261px);
+    color: var(--white200);
     font-size: 0.8rem;
 }
 

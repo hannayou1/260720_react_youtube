@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { useNavigate } from "react-router-dom";
+import ThemeToggle from "./ThemeToggle";
 
 const Search = () => {
   const [searchKeyword, setSearchKeyword] = useState('');
@@ -37,6 +38,7 @@ const Search = () => {
                 }
             }}
         />
+        <ThemeToggle />
       </div>
     </div>
   )

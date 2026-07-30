@@ -33,20 +33,21 @@
 
 .channel__info {
     margin-top: 100px;
-    color: #fff;
+    color: var(--white);
     text-align: center;
 
     .title {
         margin-bottom: 10px;
     }
     .desc {
-        color: #adadad;
+        color: var(--white200);
         padding: 0 10vw;
         margin-bottom: 30px;
         overflow-wrap: anywhere;
     }
     .info span {
-        background-color: #a6a6a631;
+        background-color: var(--glass-bg);
+        border: 1px solid var(--glass-border);
         padding: 10px 20px;
         border-radius: 40px;
         margin: 4px;
@@ -70,16 +71,19 @@
     button {
         width: 100%;
         border: 0;
-        padding: 20px;
-        background-color: #1a1a1a;
+        padding: 18px;
+        background: var(--gradient);
         color: #fff;
-        transition: all 0.3s;
+        font-weight: 700;
+        transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
         margin-bottom: 20px;
         cursor: pointer;
         border-radius: 40px;
 
         &:hover {
-            background-color: #111010;
+            transform: translateY(-2px);
+            box-shadow: var(--glow);
+            opacity: 0.95;
         }
     }
 }
